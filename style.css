@@ -1,0 +1,357 @@
+/* fonts */
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/poppins-v21-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 Semibold - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/poppins-v21-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-700 Bold - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/open-sans-v40-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* assets */
+
+section {
+    padding-block: 160px;
+}
+
+.global-container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* semibold */
+    text-transform: capitalize;
+    margin-bottom: 32px;
+}
+.subhead {
+    font-size: 1.8rem;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+h2 {
+    font-size: 2.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* semibold */
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+p {
+    font-size: 1.8rem;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    color: #808E9A;
+}
+
+.secondary-cta {
+    display: inline-block;
+    background-color: #fff;
+    font-size: 1.4rem;
+    color: #000;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 1em 5em;
+    border-radius: 999px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+.secondary-cta:hover {
+    color: #808E9A;
+}
+
+.primary-cta {
+    display: inline-block;
+    background-color: #FF52C1;
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 1em 4em;
+    border-radius: 999px;
+    box-shadow: 0 4px 8px #FF52C186;
+}
+.primary-cta:hover {
+    background-color: #ff99da;
+}
+
+
+/* header */
+
+header {
+    position: absolute;
+    padding-block: 64px;
+    width: 100%;
+    z-index: 2;
+}
+
+header .global-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* hero */
+
+.section-hero {
+    background-color: #EDFBFF;
+    padding-top: 176px;
+    position: relative;
+}
+
+.section-hero::before {
+    content: "";
+    background: url('img/blobs.svg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section-hero * {
+    z-index: 1;
+}
+
+.section-hero .global-container {
+    display: flex;
+    gap: 72px;
+    align-items: flex-end;
+}
+.section-hero .global-container > * {
+    flex: 1;
+}
+
+
+/* section 2 */
+
+.section-2 {
+    padding-bottom: 0;
+}
+
+.s2-card {
+    margin-bottom: 40px;
+    display: flex;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .1);
+    border-radius: 16px;
+    padding: 32px;
+    gap: 64px;
+    align-items: center;
+}
+
+.s2-card-content {
+    padding: 120px;
+}
+
+
+/* section 3 */
+
+.section-3 {
+    position: relative;
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .1);
+    padding: 56px 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 48px;
+    margin-inline: auto;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #00252E;
+    color: #fff;
+    padding-block: 144px 64px;
+    font-family: 'Open sans';
+    font-size: 1.4rem;
+}
+
+.footer-content {
+    display: flex;
+    gap: 120px;
+}
+.footer-content > * {
+    flex: 1;
+}
+
+footer li {
+    margin-bottom: 30px;
+    padding-left: 16px;
+}
+
+footer a {
+    color: #fff;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    margin-bottom: 32px;
+}
+
+.contact li:first-child::marker {
+    content: url('img/ping.svg');
+}
+.contact li:nth-child(2)::marker {
+    content: url('img/tel.svg');
+}
+.contact li:last-child::marker {
+    content: url('img/mail.svg');
+}
+
+.socials {
+    display: flex;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 375px) {
+    section {
+        padding-block: 96px;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+
+    .global-container {
+        max-width: 335px;
+    }
+
+    .secondary-cta, .primary-cta {
+        font-size: 1rem;
+    }
+
+    .logo {
+        max-width: 96px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    .subhead {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* hero */
+
+    .section-hero .global-container {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* section 2 */
+
+    .s2-card-1,
+    .s2-card-3 {
+        flex-direction: column-reverse;
+    }
+    .s2-card-2 {
+        flex-direction: column;
+    }
+    .s2-card-content {
+        padding: initial;
+        text-align: center;
+    }
+    .s2-card-content p {
+        text-align: initial;
+        margin-bottom: initial;
+    }
+
+    /* section 3 */
+
+    .section-3 {
+        padding: 40px 12px;
+    }
+
+    /* footer */
+
+    footer {
+        font-size: 1.4rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* .footer-content ul {
+        list-style-position: inside
+    } */
+
+    footer li {
+        margin-bottom: 1em;
+    }
+
+    .contact li::marker {
+        padding-right: 162px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
